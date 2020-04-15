@@ -5,16 +5,16 @@ const initMap = () => {
   const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v10',
-    center: [4.894584, 52.36662],
+    center: [-75.69, 45.42],
     zoom: 13
   })
 
   const popup = new mapboxgl.Popup().setHTML(
-    `<h2>Title of the station!</h2><p>This is the station of Amsterdam adding text filler to make the pop-up look better! 🥰</p>`
+    `<h2>Shopify!</h2><p>This is the marker of the Shopify Office!🥰</p>`
   )
 
   const marker = new mapboxgl.Marker()
-    .setLngLat([4.900293, 52.379174])
+    .setLngLat([-75.692430, 45.420420])
     .setPopup(popup)
     .addTo(map)
 }
